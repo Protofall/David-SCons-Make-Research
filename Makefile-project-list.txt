@@ -9,7 +9,7 @@ https://github.com/torrez/grampa
 https://github.com/blang/golang-alpine-docker
 https://github.com/justinclayton/coreos-and-consul-cluster-via-terraform
 https://github.com/rpetrich/Localization
-https://github.com/buhe/react-native-pili-deprecated		# Moved to https://github.com/buhe/react-native-pili
+https://github.com/buhe/react-native-pili-deprecated
 https://github.com/zalaare/OpenELEC-Odroid
 https://github.com/hypriot/rpi-gogs-raspbian
 https://github.com/syuu1228/uosv
