@@ -16,17 +16,13 @@ create_output () {
 
 	#Download the projects
 	cd "repos/$1"
-	counter=0
+	counter=1
 	cat $dataset_file | while read x;do
 		echo -e "$1 project number \"$counter\":"
 		let counter=counter+1
 		git clone $x
 		# echo $x
 	done
-	error_code=$?	#If an error occurs in the while loop, this will detect it
-	if [[ $error_code != 0 ]];then
-		exit "$error_code"
-	fi
 
 	cd $dir
 	return 0
