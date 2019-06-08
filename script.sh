@@ -19,13 +19,10 @@ create_output () {
 	counter=1
 	cat $dataset_file | while read x;do
 		echo -e "$1 project number \"$counter\":"
-		let counter=counter+1
+		let counter=counter+1	#This won't persist outside the loop, but thats fine
 		git clone $x
 		# echo $x
 	done
-
-	cd $dir
-	return 0
 
 	#Explore each project
 	ls "$PWD" | while read x;do
