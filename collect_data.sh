@@ -10,7 +10,7 @@ collect_data () {
 
 	#Make a new output file (If it already exists, it overrides it)
 	output_filename="$source_dir/results/$1.csv"
-	echo "Repository name,File name,Lines added,Lines removed,Commits" > $output_filename
+	echo "Repository name,File name,Lines added,Lines removed,Commits,File size (Bytes)" > $output_filename
 
 	#For use in while loops getting data
 	rm -f "$source_dir/mypipe"	#Delete the file if present
@@ -22,6 +22,7 @@ collect_data () {
 
 	#Explore each project
 	ls "$PWD" | while read x;do
+		echo "Exploring project $x"
 		cd "$x"
 		find . -name "$1" | while read y;do
 
@@ -47,8 +48,11 @@ collect_data () {
 			#Name of file
 			name=$(echo "${y#*/}")
 
+			#Get size of file (In bytes)
+			file_size=$(stat --printf="%s" "$source_dir/repos/$1/$x/$name")
+
 			#Output to csv
-			echo "$x,$name,$lines_added,$lines_removed,$count" >> $output_filename
+			echo "$x,$name,$lines_added,$lines_removed,$count,$file_size" >> $output_filename
 			files_per_repo=$((files_per_repo + 1))
 		done
 		cd "$current_dir"
@@ -56,16 +60,20 @@ collect_data () {
 
 	cd "$source_dir"
 
+	echo -e "\n"
+
 	#Now get the "files per repo" part, too hard to do it in above loop
 	first=0
 	count=0
+	file_size=0
 	repo_name=''
 	file_name=''
 	echo "" >> $output_filename
-	echo "Repository,Files" >> $output_filename
+	echo "Repository,Files,Repository size (Bytes),Sum File size (Bytes),Repository age" >> $output_filename
 	sum=-1
 	while IFS= read -r line
 	do
+		echo "Getting more info from $line"
 		if [ $first == 0 ];then	#Skip the header
 			first=1
 			continue
@@ -74,9 +82,16 @@ collect_data () {
 		#If either the file or repo name is different (On change)
 		if [ "$repo_name" != "$(echo "$line" | cut -d',' -f 1)" ];then
 			if [[ $file_name != '' || $repo_name != '' ]];then	#Ignores first call since its going from nothing to something
-				echo "$repo_name,$count" >> $output_filename
+				repo_size=$(du -hcs -B1 "$source_dir/repos/$1/$repo_name" | head -n 1 | cut -f 1)	#Get size of repo in bytes
+				cd "$source_dir/repos/$1/$repo_name"
+				repo_age=$(git log --reverse --format="format:%ci" | sed -n 1p)	#You need to be in the repo for it to work
+				cd "$source_dir"
+				
+				echo "Creating new data for repo $repo_name"
+				echo "$repo_name,$count,$repo_size,$file_size,$repo_age" >> $output_filename
 			fi
 			count=0
+			file_size=0
 		fi
 
 		repo_name=$(echo "$line" | cut -d',' -f 1)
@@ -86,10 +101,11 @@ collect_data () {
 		fi
 		count=$((count + 1))
 		sum=$((sum + 1))
+		file_size=$((file_size + $(echo "$line" | cut -d',' -f 6)))
 	done < "$source_dir/results/$1.csv"
 	echo "Total,$sum" >> $output_filename	#Adding a total to the bottom
 
-	echo "Finished collecting data for $1"
+	echo -e "\nFinished collecting data for $1\n"
 }
 
 collect_data "Makefile"

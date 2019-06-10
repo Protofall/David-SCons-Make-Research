@@ -1,227 +1,227 @@
-Repository name,File name,Lines added,Lines removed,Commits
-3DS_Quick_Reboot,Makefile,180,1,2
-ansible-role-composer,tests/Makefile,16,2,2
-ansible-role-phpstorm,tests/Makefile,14,0,1
-ansible-softwareraid,Makefile,19,5,2
-ArduinoDevel,example/yourproject_with_lib_makefile/Makefile,11,0,1
-ArduinoDevel,example/yourproject_makefile/Makefile,11,0,1
-avian-pack,Makefile,455,194,40
-avian-pack,android/external/expat/amiga/Makefile,336,0,1
-aws-ha-deployment-example,Makefile,13,1,4
-colorselector.vim,Makefile,332,0,1
-consul-http-router,Makefile,91,39,6
-coreos-and-consul-cluster-via-terraform,Makefile,43,0,1
-coreos-stack-bootstrap,container-image-src/logrotate/Makefile,32,2,3
-coreos-stack-bootstrap,container-image-src/zookeeper/Makefile,29,9,4
-coreos-stack-bootstrap,container-image-src/vulcand/Makefile,25,1,2
-coreos-stack-bootstrap,container-image-src/confluent/Makefile,12,0,1
-coreos-stack-bootstrap,container-image-src/skydns/Makefile,21,0,1
-coreos-stack-bootstrap,container-image-src/influxdb/Makefile,19,0,1
-coreos-stack-bootstrap,container-image-src/syslog_kafka/Makefile,21,0,1
-coreos-stack-bootstrap,container-image-src/statsdaemon/Makefile,21,0,1
-coreos-stack-bootstrap,container-image-src/sysinfo_influxdb/Makefile,21,0,1
-coreos-stack-bootstrap,container-image-src/logstash/Makefile,21,1,2
-coreos-stack-bootstrap,visible/Makefile,442,219,17
-coreos-stack-bootstrap,Makefile,135,86,7
-Coverflow,Makefile,333,0,1
-CS100.1x,Makefile,10,0,1
-Debian-Live-config,webconverger/Makefile,299,194,85
-Dell-XPS13-9333-DSDT-Patch,Makefile,420,176,24
-dev-helper-cmds,Makefile,36,19,6
-DFA-SPEC,Makefile,11,4,3
-DistributionTests,Makefile,110,5,3
-dockerfiles,passenger-ree/Makefile,17,3,3
-dockerfiles,transmission/Makefile,15,3,4
-dockerfiles,passenger/Makefile,11,1,3
-dockerfiles,php-mysql/Makefile,17,2,3
-dockerfiles,Makefile,21,1,2
-dockerfiles,softether/Makefile,24,0,1
-dockerfiles,postgres/Makefile,31,7,7
-dockerfiles,btsync/Makefile,11,0,1
-dockerfiles,base/Makefile,12,1,3
-dockerfiles,vsftpd/Makefile,22,0,1
-dockerfiles,hosting/Makefile,8,0,1
-docker-sauce-connect,Makefile,32,2,2
-docs-automation,Makefile,83,4,3
-dokku-wordpress-template,Makefile,101,26,8
-dve-docker,mysqlclustermgmd/Makefile,3,1,2
-dve-docker,mysqlclusterndbd/Makefile,3,1,2
-dve-docker,mysqlclustermgm/Makefile,3,1,2
-dve-docker,mysqlclustermysqld/Makefile,3,1,2
-dve-docker,mysqlclusterbase/Makefile,3,1,2
-erlang-starter-kit,Makefile,484,230,11
-excelsior,Makefile,237,0,1
-fecompressor.vim,Makefile,376,0,1
-fpff,spec/Makefile,68,0,1
-function-patcher-example,Makefile,230,8,2
-ghc-llvm-next,Makefile,124,47,20
-GitForBeginners,Makefile,66,37,7
-glisy,Makefile,71,19,8
-glisy,examples/Makefile,24,3,4
-golang-alpine-docker,Makefile,16,0,1
-Golang-Makefile,example/Makefile,76,9,3
-Golang-Makefile,Makefile,77,10,4
-grampa,Makefile,211,5,4
-IPFS_Demo,Makefile,6,0,1
-kafka-rpm,Makefile,121,42,7
-last-makefile,Makefile,198,10,3
-lazymake,examples/shared_lib/Makefile,11,0,1
-lazymake,examples/exec_commands/Makefile,16,0,1
-lazymake,examples/main_deliverable/Makefile,10,0,1
-libpng16-deb,Makefile,82,17,11
-make4docker,Makefile,96,55,9
-makefile-example,Makefile,55,2,3
-marriage,Makefile,16,0,1
-Mission_Statement,Makefile,5,0,2
-MPlayerX-Localization,1.0.7/Makefile,69,0,1
-MPlayerX-Localization,1.0.22.1/Makefile,63,0,1
-MPlayerX-Localization,1.0.12/Makefile,61,0,1
-MPlayerX-Localization,1.0.2/Makefile,61,0,1
-MPlayerX-Localization,1.0.10/Makefile,61,0,1
-MPlayerX-Localization,1.0.17/Makefile,63,0,1
-MPlayerX-Localization,1.0.20/Makefile,63,0,1
-MPlayerX-Localization,1.0.16/Makefile,63,0,1
-MPlayerX-Localization,1.0.8/Makefile,61,0,1
-MPlayerX-Localization,1.0.4/Makefile,61,0,1
-MPlayerX-Localization,1.1.4/Makefile,63,0,1
-MPlayerX-Localization,1.0.14/Makefile,63,0,1
-MPlayerX-Localization,1.1.1/Makefile,63,0,1
-MPlayerX-Localization,1.0.18/Makefile,63,0,1
-MPlayerX-Localization,1.0.3/Makefile,61,0,1
-MPlayerX-Localization,1.0.21/Makefile,63,0,1
-MPlayerX-Localization,1.0.1/Makefile,61,0,1
-MPlayerX-Localization,1.0.5/Makefile,69,0,2
-MPlayerX-Localization,1.0.19/Makefile,63,0,1
-MPlayerX-Localization,1.1.3/Makefile,63,0,1
-MPlayerX-Localization,1.0.6/Makefile,69,0,1
-MPlayerX-Localization,1.0.11/Makefile,61,0,1
-MPlayerX-Localization,1.0.15/Makefile,63,0,1
-MPlayerX-Localization,1.0.0/Makefile,47,0,1
-MPlayerX-Localization,1.0.22/Makefile,63,0,1
-MPlayerX-Localization,1.0.13/Makefile,64,1,2
-MPlayerX-Localization,1.1.2/Makefile,63,0,1
-MPlayerX-Localization,1.0.9/Makefile,61,0,1
-MPlayerX-Localization,1.1.0/Makefile,63,0,1
-nanofont,Makefile,19,1,2
-nomad-intro,consul/Makefile,55,6,3
-nomad-intro,nomad/Makefile,51,11,4
-notes,Makefile,22,4,2
-ofxTraerPhysics,example-Attractor/Makefile,2,0,1
-ofxTraerPhysics,example-SpringGrid/Makefile,2,0,1
-OpenELEC-Odroid,Makefile,70,43,24
-p3atGazeboRos,Makefile,1,0,1
-p3atGazeboRos,build/gtest/Makefile,248,0,1
-p3atGazeboRos,build/Makefile,540,0,2
-pegex-pgx,Makefile,66,51,17
-Perl-Critic-Jed,Makefile,145,9,3
-ppx_type_conv,Makefile,105,87,8
-quotes,Makefile,32,3,4
-realtime,Makefile,59,28,6
-ROP-Loader,source/arm9/Makefile,127,0,1
-ROP-Loader,source/Makefile,37,0,1
-ROP-Loader,source/arm7/Makefile,126,0,1
-rpi-gogs-raspbian,Makefile,40,0,1
-scaleway-coreos,Makefile,20,0,1
-setup-resistant,Makefile,17,0,1
-sped-docs,Makefile,38,0,1
-SpringBoard-Dumps,Makefile,51,16,11
-stacki-kubernetes,src/cfssl/Makefile,33,0,1
-stacki-kubernetes,src/flanneld/Makefile,44,0,2
-stacki-kubernetes,src/etcd/Makefile,44,1,3
-stacki-kubernetes,src/kubernetes-client/Makefile,63,0,1
-stacki-kubernetes,src/Makefile,72,0,1
-stacki-kubernetes,src/kubernetes-images/Makefile,65,0,1
-stacki-kubernetes,src/kubernetes-extras/Makefile,68,5,2
-stacki-kubernetes,src/spreadsheets/Makefile,18,4,2
-stacki-kubernetes,src/kubernetes-server/Makefile,70,6,2
-stacki-kubernetes,Makefile,61,1,2
-steam-flatpak,Makefile,10,0,1
-tf_aws_mesos,mesos_master/Makefile,2,0,1
-tf_aws_mesos,adminlb/Makefile,2,0,1
-tf_aws_mesos,elb/Makefile,2,0,1
-tf_aws_mesos,Makefile,2,0,1
-tf_aws_mesos,mesos_slave/Makefile,2,0,1
-tf_aws_mesos,lb/Makefile,2,0,1
-tf_aws_mesos,dns/Makefile,2,0,1
-the-ooc-language,Makefile,107,27,12
-tlspretense-service,Makefile,32,1,2
-uosv,osv_hack/Makefile,71,0,1
-uosv,userdata/Makefile,10,3,3
-vim-arduino,templates/Makefile,313,3,3
-webpush-protocol,Makefile,501,492,36
-webrtc-ios,Makefile,95,58,5
-westraining-R,intro-to-R/src/Makefile,16,9,10
+Repository name,File name,Lines added,Lines removed,Commits,File size (Bytes)
+3DS_Quick_Reboot,Makefile,180,1,2,6911
+ansible-role-composer,tests/Makefile,16,2,2,498
+ansible-role-phpstorm,tests/Makefile,14,0,1,498
+ansible-softwareraid,Makefile,19,5,2,269
+ArduinoDevel,example/yourproject_with_lib_makefile/Makefile,11,0,1,384
+ArduinoDevel,example/yourproject_makefile/Makefile,11,0,1,384
+avian-pack,Makefile,455,194,40,8525
+avian-pack,android/external/expat/amiga/Makefile,336,0,1,10427
+aws-ha-deployment-example,Makefile,13,1,4,382
+colorselector.vim,Makefile,332,0,1,10467
+consul-http-router,Makefile,91,39,6,1890
+coreos-and-consul-cluster-via-terraform,Makefile,43,0,1,1098
+coreos-stack-bootstrap,container-image-src/logrotate/Makefile,32,2,3,841
+coreos-stack-bootstrap,container-image-src/zookeeper/Makefile,29,9,4,534
+coreos-stack-bootstrap,container-image-src/vulcand/Makefile,25,1,2,707
+coreos-stack-bootstrap,container-image-src/confluent/Makefile,12,0,1,283
+coreos-stack-bootstrap,container-image-src/skydns/Makefile,21,0,1,512
+coreos-stack-bootstrap,container-image-src/influxdb/Makefile,19,0,1,499
+coreos-stack-bootstrap,container-image-src/syslog_kafka/Makefile,21,0,1,567
+coreos-stack-bootstrap,container-image-src/statsdaemon/Makefile,21,0,1,542
+coreos-stack-bootstrap,container-image-src/sysinfo_influxdb/Makefile,21,0,1,591
+coreos-stack-bootstrap,container-image-src/logstash/Makefile,21,1,2,510
+coreos-stack-bootstrap,visible/Makefile,442,219,17,12210
+coreos-stack-bootstrap,Makefile,135,86,7,1939
+Coverflow,Makefile,333,0,1,20597
+CS100.1x,Makefile,10,0,1,278
+Debian-Live-config,webconverger/Makefile,299,194,85,4419
+Dell-XPS13-9333-DSDT-Patch,Makefile,420,176,24,9932
+dev-helper-cmds,Makefile,36,19,6,347
+DFA-SPEC,Makefile,11,4,3,85
+DistributionTests,Makefile,110,5,3,2409
+dockerfiles,passenger-ree/Makefile,17,3,3,179
+dockerfiles,transmission/Makefile,15,3,4,280
+dockerfiles,passenger/Makefile,11,1,3,115
+dockerfiles,php-mysql/Makefile,17,2,3,182
+dockerfiles,Makefile,21,1,2,284
+dockerfiles,softether/Makefile,24,0,1,322
+dockerfiles,postgres/Makefile,31,7,7,455
+dockerfiles,btsync/Makefile,11,0,1,104
+dockerfiles,base/Makefile,12,1,3,141
+dockerfiles,vsftpd/Makefile,22,0,1,278
+dockerfiles,hosting/Makefile,8,0,1,104
+docker-sauce-connect,Makefile,32,2,2,588
+docs-automation,Makefile,83,4,3,2181
+dokku-wordpress-template,Makefile,101,26,8,2025
+dve-docker,mysqlclustermgmd/Makefile,3,1,2,56
+dve-docker,mysqlclusterndbd/Makefile,3,1,2,54
+dve-docker,mysqlclustermgm/Makefile,3,1,2,55
+dve-docker,mysqlclustermysqld/Makefile,3,1,2,54
+dve-docker,mysqlclusterbase/Makefile,3,1,2,52
+erlang-starter-kit,Makefile,484,230,11,7443
+excelsior,Makefile,237,0,1,6799
+fecompressor.vim,Makefile,376,0,1,11353
+fpff,spec/Makefile,68,0,1,1838
+function-patcher-example,Makefile,230,8,2,8999
+ghc-llvm-next,Makefile,124,47,20,2014
+GitForBeginners,Makefile,66,37,7,751
+glisy,Makefile,71,19,8,995
+glisy,examples/Makefile,24,3,4,343
+golang-alpine-docker,Makefile,16,0,1,278
+Golang-Makefile,example/Makefile,76,9,3,1492
+Golang-Makefile,Makefile,77,10,4,1476
+grampa,Makefile,211,5,4,4793
+IPFS_Demo,Makefile,6,0,1,171
+kafka-rpm,Makefile,121,42,7,2376
+last-makefile,Makefile,198,10,3,6350
+lazymake,examples/shared_lib/Makefile,11,0,1,282
+lazymake,examples/exec_commands/Makefile,16,0,1,502
+lazymake,examples/main_deliverable/Makefile,10,0,1,268
+libpng16-deb,Makefile,82,17,11,2014
+make4docker,Makefile,96,55,9,795
+makefile-example,Makefile,55,2,3,1382
+marriage,Makefile,16,0,1,335
+Mission_Statement,Makefile,5,0,2,185
+MPlayerX-Localization,1.0.7/Makefile,69,0,1,1856
+MPlayerX-Localization,1.0.22.1/Makefile,63,0,1,1650
+MPlayerX-Localization,1.0.12/Makefile,61,0,1,1581
+MPlayerX-Localization,1.0.2/Makefile,61,0,1,1581
+MPlayerX-Localization,1.0.10/Makefile,61,0,1,1581
+MPlayerX-Localization,1.0.17/Makefile,63,0,1,1650
+MPlayerX-Localization,1.0.20/Makefile,63,0,1,1650
+MPlayerX-Localization,1.0.16/Makefile,63,0,1,1650
+MPlayerX-Localization,1.0.8/Makefile,61,0,1,1581
+MPlayerX-Localization,1.0.4/Makefile,61,0,1,1581
+MPlayerX-Localization,1.1.4/Makefile,63,0,1,1650
+MPlayerX-Localization,1.0.14/Makefile,63,0,1,1650
+MPlayerX-Localization,1.1.1/Makefile,63,0,1,1650
+MPlayerX-Localization,1.0.18/Makefile,63,0,1,1650
+MPlayerX-Localization,1.0.3/Makefile,61,0,1,1581
+MPlayerX-Localization,1.0.21/Makefile,63,0,1,1650
+MPlayerX-Localization,1.0.1/Makefile,61,0,1,1581
+MPlayerX-Localization,1.0.5/Makefile,69,0,2,1856
+MPlayerX-Localization,1.0.19/Makefile,63,0,1,1650
+MPlayerX-Localization,1.1.3/Makefile,63,0,1,1650
+MPlayerX-Localization,1.0.6/Makefile,69,0,1,1856
+MPlayerX-Localization,1.0.11/Makefile,61,0,1,1581
+MPlayerX-Localization,1.0.15/Makefile,63,0,1,1650
+MPlayerX-Localization,1.0.0/Makefile,47,0,1,921
+MPlayerX-Localization,1.0.22/Makefile,63,0,1,1650
+MPlayerX-Localization,1.0.13/Makefile,64,1,2,1650
+MPlayerX-Localization,1.1.2/Makefile,63,0,1,1650
+MPlayerX-Localization,1.0.9/Makefile,61,0,1,1581
+MPlayerX-Localization,1.1.0/Makefile,63,0,1,1650
+nanofont,Makefile,19,1,2,375
+nomad-intro,consul/Makefile,55,6,3,1576
+nomad-intro,nomad/Makefile,51,11,4,1379
+notes,Makefile,22,4,2,395
+ofxTraerPhysics,example-Attractor/Makefile,2,0,1,107
+ofxTraerPhysics,example-SpringGrid/Makefile,2,0,1,107
+OpenELEC-Odroid,Makefile,70,43,24,334
+p3atGazeboRos,Makefile,1,0,1,41
+p3atGazeboRos,build/gtest/Makefile,248,0,1,8755
+p3atGazeboRos,build/Makefile,540,0,2,18263
+pegex-pgx,Makefile,66,51,17,415
+Perl-Critic-Jed,Makefile,145,9,3,4402
+ppx_type_conv,Makefile,105,87,8,300
+quotes,Makefile,32,3,4,484
+realtime,Makefile,59,28,6,745
+ROP-Loader,source/arm9/Makefile,127,0,1,5166
+ROP-Loader,source/Makefile,37,0,1,1296
+ROP-Loader,source/arm7/Makefile,126,0,1,4893
+rpi-gogs-raspbian,Makefile,40,0,1,1583
+scaleway-coreos,Makefile,20,0,1,556
+setup-resistant,Makefile,17,0,1,655
+sped-docs,Makefile,38,0,1,949
+SpringBoard-Dumps,Makefile,51,16,11,1011
+stacki-kubernetes,src/cfssl/Makefile,33,0,1,834
+stacki-kubernetes,src/flanneld/Makefile,44,0,2,1126
+stacki-kubernetes,src/etcd/Makefile,44,1,3,1113
+stacki-kubernetes,src/kubernetes-client/Makefile,63,0,1,2724
+stacki-kubernetes,src/Makefile,72,0,1,2487
+stacki-kubernetes,src/kubernetes-images/Makefile,65,0,1,2579
+stacki-kubernetes,src/kubernetes-extras/Makefile,68,5,2,2595
+stacki-kubernetes,src/spreadsheets/Makefile,18,4,2,351
+stacki-kubernetes,src/kubernetes-server/Makefile,70,6,2,2528
+stacki-kubernetes,Makefile,61,1,2,2550
+steam-flatpak,Makefile,10,0,1,245
+tf_aws_mesos,mesos_master/Makefile,2,0,1,11
+tf_aws_mesos,adminlb/Makefile,2,0,1,11
+tf_aws_mesos,elb/Makefile,2,0,1,11
+tf_aws_mesos,Makefile,2,0,1,11
+tf_aws_mesos,mesos_slave/Makefile,2,0,1,11
+tf_aws_mesos,lb/Makefile,2,0,1,11
+tf_aws_mesos,dns/Makefile,2,0,1,11
+the-ooc-language,Makefile,107,27,12,2019
+tlspretense-service,Makefile,32,1,2,1338
+uosv,osv_hack/Makefile,71,0,1,2126
+uosv,userdata/Makefile,10,3,3,124
+vim-arduino,templates/Makefile,313,3,3,10243
+webpush-protocol,Makefile,501,492,36,238
+webrtc-ios,Makefile,95,58,5,1033
+westraining-R,intro-to-R/src/Makefile,16,9,10,256
 
-Repository,Files
-3DS_Quick_Reboot,1
-ansible-role-composer,1
-ansible-role-phpstorm,1
-ansible-softwareraid,1
-ArduinoDevel,2
-avian-pack,2
-aws-ha-deployment-example,1
-colorselector.vim,1
-consul-http-router,1
-coreos-and-consul-cluster-via-terraform,1
-coreos-stack-bootstrap,12
-Coverflow,1
-CS100.1x,1
-Debian-Live-config,1
-Dell-XPS13-9333-DSDT-Patch,1
-dev-helper-cmds,1
-DFA-SPEC,1
-DistributionTests,1
-dockerfiles,11
-docker-sauce-connect,1
-docs-automation,1
-dokku-wordpress-template,1
-dve-docker,5
-erlang-starter-kit,1
-excelsior,1
-fecompressor.vim,1
-fpff,1
-function-patcher-example,1
-ghc-llvm-next,1
-GitForBeginners,1
-glisy,2
-golang-alpine-docker,1
-Golang-Makefile,2
-grampa,1
-IPFS_Demo,1
-kafka-rpm,1
-last-makefile,1
-lazymake,3
-libpng16-deb,1
-make4docker,1
-makefile-example,1
-marriage,1
-Mission_Statement,1
-MPlayerX-Localization,29
-nanofont,1
-nomad-intro,2
-notes,1
-ofxTraerPhysics,2
-OpenELEC-Odroid,1
-p3atGazeboRos,3
-pegex-pgx,1
-Perl-Critic-Jed,1
-ppx_type_conv,1
-quotes,1
-realtime,1
-ROP-Loader,3
-rpi-gogs-raspbian,1
-scaleway-coreos,1
-setup-resistant,1
-sped-docs,1
-SpringBoard-Dumps,1
-stacki-kubernetes,10
-steam-flatpak,1
-tf_aws_mesos,7
-the-ooc-language,1
-tlspretense-service,1
-uosv,2
-vim-arduino,1
-webpush-protocol,1
-webrtc-ios,1
-westraining-R,1
+Repository,Files,Repository size (Bytes),Sum File size (Bytes),Repository age
+3DS_Quick_Reboot,1,3756032,6911,2015-01-18 14:53:03 +0100
+ansible-role-composer,1,327680,498,2014-07-11 13:06:16 +0200
+ansible-role-phpstorm,1,282624,498,2014-07-20 18:51:12 +0000
+ansible-softwareraid,1,274432,269,2014-12-10 11:25:24 +0000
+ArduinoDevel,2,4784128,768,2012-01-20 10:45:06 +0100
+avian-pack,2,3870720,18952,2014-03-23 16:48:03 +0400
+aws-ha-deployment-example,1,10510336,382,2015-07-05 15:00:18 +0100
+colorselector.vim,1,729088,10467,2010-02-27 14:04:17 +0800
+consul-http-router,1,282624,1890,2015-03-23 12:35:14 +0100
+coreos-and-consul-cluster-via-terraform,1,598016,1098,2014-12-31 01:24:19 -0800
+coreos-stack-bootstrap,12,5558272,19735,2014-06-28 06:32:39 -0700
+Coverflow,1,557056,20597,2014-01-27 15:06:51 +0800
+CS100.1x,1,794624,278,2015-06-14 18:47:48 +0800
+Debian-Live-config,1,68030464,4419,2007-09-17 12:30:51 +0200
+Dell-XPS13-9333-DSDT-Patch,1,12029952,9932,2014-07-13 13:22:04 -0400
+dev-helper-cmds,1,282624,347,2014-12-12 16:55:33 +0000
+DFA-SPEC,1,2043904,85,2016-09-06 11:31:36 +0200
+DistributionTests,1,1327104,2409,2016-10-10 00:33:39 -0700
+dockerfiles,11,11165696,2444,2013-09-28 13:47:26 +0200
+docker-sauce-connect,1,704512,588,2015-02-06 06:57:20 +1100
+docs-automation,1,569344,2181,2015-09-24 22:21:33 +1000
+dokku-wordpress-template,1,8826880,2025,2014-12-12 12:28:40 +0100
+dve-docker,5,749568,271,2014-06-09 14:32:17 +0200
+erlang-starter-kit,1,3481600,7443,2011-03-30 00:34:45 +0900
+excelsior,1,344064,6799,2009-08-17 11:40:00 -0400
+fecompressor.vim,1,704512,11353,2011-02-15 12:13:09 +0800
+fpff,1,2359296,1838,2018-03-04 14:44:08 -0500
+function-patcher-example,1,483328,8999,2016-08-09 18:07:56 +0200
+ghc-llvm-next,1,241664,2014,2015-10-14 15:38:21 +1100
+GitForBeginners,1,872448,751,2012-03-29 13:47:20 +0800
+glisy,2,827392,1338,2015-09-13 19:49:03 -0400
+golang-alpine-docker,1,372736,278,2015-04-19 14:28:33 +0200
+Golang-Makefile,2,274432,2968,2017-01-03 19:31:53 +0800
+grampa,1,487424,4793,2016-03-19 16:48:01 -0700
+IPFS_Demo,1,782336,171,2017-10-06 16:14:50 +0200
+kafka-rpm,1,684032,2376,2013-09-18 07:41:14 -0700
+last-makefile,1,344064,6350,2015-07-17 18:02:21 -0400
+lazymake,3,573440,1052,2010-11-30 14:13:14 -0800
+libpng16-deb,1,675840,2014,2014-09-11 16:25:24 +0100
+make4docker,1,663552,795,2017-04-26 11:58:35 -0500
+makefile-example,1,1548288,1382,2015-08-11 22:56:33 -0700
+marriage,1,315392,335,2014-12-16 12:05:10 +0900
+Mission_Statement,1,770048,185,2014-10-15 08:25:45 +0200
+MPlayerX-Localization,29,379387904,47118,2011-02-01 10:43:53 +0900
+nanofont,1,278528,375,2014-10-17 12:08:03 +0200
+nomad-intro,2,1290240,2955,2015-12-06 17:56:51 -0800
+notes,1,3117383680,395,2014-02-19 19:09:43 +0900
+ofxTraerPhysics,2,226750464,214,2013-02-23 01:35:42 -0800
+OpenELEC-Odroid,1,270974976,334,2009-03-18 13:02:53 +0100
+p3atGazeboRos,3,9134080,27059,2013-10-03 19:02:39 +0530
+pegex-pgx,1,356352,415,2010-08-12 02:05:13 -0700
+Perl-Critic-Jed,1,18251776,4402,2014-01-29 16:32:27 -0800
+ppx_type_conv,1,376832,300,2015-09-25 16:50:32 +0100
+quotes,1,1863680,484,2012-03-21 13:45:35 -0700
+realtime,1,573440,745,2013-05-06 01:34:29 -0700
+ROP-Loader,3,2068480,11355,2013-12-18 09:54:00 -0800
+rpi-gogs-raspbian,1,475136,1583,2015-06-30 03:21:14 +0200
+scaleway-coreos,1,245760,556,2016-03-24 11:33:13 +0100
+setup-resistant,1,245760,655,2015-05-03 12:40:30 -0700
+sped-docs,1,507904,949,2016-01-29 16:40:16 -0200
+SpringBoard-Dumps,1,3502080,1011,2013-11-02 18:14:54 +1030
+stacki-kubernetes,10,50532352,18887,2017-01-23 15:02:01 -0700
+steam-flatpak,1,618496,245,2017-03-20 22:47:31 +0100
+tf_aws_mesos,7,507904,77,2015-02-19 14:58:00 +0100
+the-ooc-language,1,352256,2019,2010-07-25 17:08:45 +0200
+tlspretense-service,1,487424,1338,2015-04-06 18:43:39 -0700
+uosv,2,335872,2250,2013-11-12 19:43:26 -0800
+vim-arduino,1,643072,10243,2011-08-05 22:42:37 -0500
+webpush-protocol,1,1458176,238,2014-06-20 16:58:59 -0700
+webrtc-ios,1,434176,1033,2014-11-14 14:49:17 +0800
+westraining-R,1,9900032,256,2016-01-27 14:30:51 -0500
 Total,151
