@@ -1,2 +1,9 @@
 # We don't want to add the cloned repositories to our repository
 repos/*
+
+# Also don't want to include scons system files
+.sconsign.dblite
+
+# And don't include compiled files
+*.pyc
+*.o

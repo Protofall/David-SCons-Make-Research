@@ -1,0 +1,22 @@
+#scons
+
+file_path = "./includes/filename.py"
+
+#This method works when scons depends on python2
+import imp
+extra_steps = imp.load_source('dreamcast', file_path)
+
+#Setup our environment, use the extra file
+env=Environment()
+extra_steps.Init(env)
+
+#Create an extra builder
+prog = Builder(action=["gcc $SOURCE -o $TARGET"])
+
+#Add the builders
+builders = { "Prog": prog}
+env.Append(BUILDERS=builders)
+
+print "Version is: " + env['VERSION']
+env.Obj(target = "main.o", source = "main.c")
+env.Prog(target = "main", source = "main.o")
