@@ -10,6 +10,7 @@ collect_data () {
 
 	#Make a new output file (If it already exists, it overrides it)
 	output_filename="$source_dir/results/$1.csv"
+	echo -e "\nRemoving previous $output_filename\n"
 	echo "Repository name,File name,Lines added,Lines removed,Commits,File size (Bytes)" > $output_filename
 
 	#For use in while loops getting data
@@ -22,7 +23,7 @@ collect_data () {
 
 	#Explore each project
 	ls "$PWD" | while read x;do
-		echo "Exploring project $x"
+		echo "Exploring project: $x"
 		cd "$x"
 		find . -name "$1" | while read y;do
 
@@ -69,11 +70,11 @@ collect_data () {
 	repo_name=''
 	file_name=''
 	echo "" >> $output_filename
-	echo "Repository,Files,Repository size (Bytes),Sum File size (Bytes),Repository age" >> $output_filename
+	echo "Repository,Files,Repository size (Bytes),Sum File size (Bytes),Repository age (EPOCH)" >> $output_filename
 	sum=-1
 	while IFS= read -r line
 	do
-		echo "Getting more info from $line"
+		echo "Getting more info from: $line"
 		if [ $first == 0 ];then	#Skip the header
 			first=1
 			continue
@@ -84,10 +85,11 @@ collect_data () {
 			if [[ $file_name != '' || $repo_name != '' ]];then	#Ignores first call since its going from nothing to something
 				repo_size=$(du -hcs -B1 "$source_dir/repos/$1/$repo_name" | head -n 1 | cut -f 1)	#Get size of repo in bytes
 				cd "$source_dir/repos/$1/$repo_name"
-				repo_age=$(git log --reverse --format="format:%ci" | sed -n 1p)	#You need to be in the repo for it to work
+				repo_age=$(date -d "$(git log --reverse --format="format:%ci" | sed -n 1p)" "+%s")	#You need to be in the repo for it to work.
+																									#Also converts from GMT to EPOCH
 				cd "$source_dir"
 				
-				echo "Creating new data for repo $repo_name"
+				echo "Creating new data for repository: $repo_name"
 				echo "$repo_name,$count,$repo_size,$file_size,$repo_age" >> $output_filename
 			fi
 			count=0
