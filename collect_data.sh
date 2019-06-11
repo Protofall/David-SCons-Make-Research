@@ -66,15 +66,17 @@ collect_data () {
 	#Now get the "files per repo" part, too hard to do it in above loop
 	first=0
 	count=0
-	file_size=0
 	repo_name=''
 	file_name=''
+	sum_add=0
+	sum_removed=0
+	sum_commit=0
+	file_size=0
 	echo "" >> $output_filename
-	echo "Repository,Files,Repository size (Bytes),Sum File size (Bytes),Repository age (EPOCH)" >> $output_filename
+	echo "Repository,Files,Repository size (Bytes),Sum File size (Bytes),Repository age (EPOCH),Sum Lines added, Sum Lines removed, Sum No. Commits" >> $output_filename
 	sum=-1
 	while IFS= read -r line
 	do
-		echo "Getting more info from: $line"
 		if [ $first == 0 ];then	#Skip the header
 			first=1
 			continue
@@ -90,19 +92,25 @@ collect_data () {
 				cd "$source_dir"
 				
 				echo "Creating new data for repository: $repo_name"
-				echo "$repo_name,$count,$repo_size,$file_size,$repo_age" >> $output_filename
+				echo "$repo_name,$count,$repo_size,$file_size,$repo_age,$sum_add,$sum_removed,$sum_commit" >> $output_filename
 			fi
 			count=0
 			file_size=0
+			sum_add=0
+			sum_removed=0
+			sum_commit=0
 		fi
-
 		repo_name=$(echo "$line" | cut -d',' -f 1)
 		file_name=$(echo "$line" | cut -d',' -f 2)
+		echo "Getting more info from: $repo_name"
 		if [[ $file_name == '' || $repo_name == '' ]];then	#Detect the end of the previous data and stop
 			break
 		fi
 		count=$((count + 1))
 		sum=$((sum + 1))
+		sum_add=$((sum_add + $(echo "$line" | cut -d',' -f 3)))
+		sum_remove=$((sum_remove + $(echo "$line" | cut -d',' -f 4)))
+		sum_commit=$((sum_commit + $(echo "$line" | cut -d',' -f 5)))
 		file_size=$((file_size + $(echo "$line" | cut -d',' -f 6)))
 	done < "$source_dir/results/$1.csv"
 	echo "Total,$sum" >> $output_filename	#Adding a total to the bottom
