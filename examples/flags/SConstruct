@@ -1,0 +1,10 @@
+#scons
+
+#Setup our environment, use the extra file
+env=Environment()
+env['myversion'] = ARGUMENTS.get('version', 0)	#If not present it defaults to zero
+env.Append(CCFLAGS = '-DMYFLAG=$myversion')
+
+#Create the files
+env.Object(target = "main.o", source = "main.c")
+env.Program(target = "main", source = "main.o")
