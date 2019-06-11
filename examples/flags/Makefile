@@ -1,27 +1,19 @@
 #makefile
 
+flags=
+.PHONY: version1 version2 clean
+
 all: main.o
 	gcc "main.o" -o "main"
 
-.PHONY: version1
-version1: dirs a/main.o
-	gcc -o "main" "a/main.o"
+version1: flags += "-DMYFLAG=1"
+version1: all
 
-.PHONY: version2
-version2: dirs b/main.o
-	gcc -o "main" "b/main.o"
+version2: flags += "-DMYFLAG=2"
+version2: all
 
-a/%.o: %.c
-	gcc -DMYFLAG=1 -c $^ -o $@
+%.o: %.c
+	gcc $(flags) -c $^ -o $@
 
-b/%.o: %.c
-	gcc -DMYFLAG=2 -c $^ -o $@
-
-.PHONY: dirs
-dirs:
-	mkdir -p a b
-
-.PHONY: clean
 clean:
 	rm -f main.o main
-	rm -rf a b
