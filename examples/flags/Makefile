@@ -11,10 +11,10 @@ version1: dirs a/main.o
 version2: dirs b/main.o
 	gcc -o "main" "b/main.o"
 
-a/main.o: main.c
+a/%.o: %.c
 	gcc -DMYFLAG=1 -c $^ -o $@
 
-b/main.o: main.c
+b/%.o: %.c
 	gcc -DMYFLAG=2 -c $^ -o $@
 
 .PHONY: dirs
