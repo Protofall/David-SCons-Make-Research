@@ -21,10 +21,9 @@ download () {
 	done
 
 	cd $dir
+
+	echo "Done $1"
 }
 
 download "SConstruct"
-echo "Done SConstruct"
 download "Makefile"
-echo "Done Makefile"
-# download "DERP"
