@@ -109,7 +109,7 @@ collect_data () {
 		count=$((count + 1))
 		sum=$((sum + 1))
 		sum_add=$((sum_add + $(echo "$line" | cut -d',' -f 3)))
-		sum_remove=$((sum_remove + $(echo "$line" | cut -d',' -f 4)))
+		sum_removed=$((sum_removed + $(echo "$line" | cut -d',' -f 4)))
 		sum_commit=$((sum_commit + $(echo "$line" | cut -d',' -f 5)))
 		file_size=$((file_size + $(echo "$line" | cut -d',' -f 6)))
 	done < "$source_dir/results/$1.csv"
