@@ -2,8 +2,8 @@
 
 #Setup our environment, use the extra file
 env=Environment()
-env['myversion'] = ARGUMENTS.get('version', 0)	#If not present it defaults to zero
-env.Append(CCFLAGS = '-DMYFLAG=$myversion')
+env['myflag'] = ARGUMENTS.get('flag', 0)	#If not present it defaults to zero
+env.Append(CCFLAGS = '-DMYFLAG=$myflag')
 
 #Create the files
 env.Object(target = "main.o", source = "main.c")
